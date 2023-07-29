@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   image_picker: ^1.0.1
   path_provider: ^2.0.15
+  moor: ^4.6.1+1
+  moor_flutter: ^4.1.0
+  flutter_quill: ^7.2.19
 
 dev_dependencies:
   flutter_test:
