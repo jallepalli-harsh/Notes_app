@@ -5,6 +5,8 @@ import 'add_edit_note_screen.dart';
 
 //Displays the list of all notes in home screen.
 class NotesListScreen extends StatefulWidget {
+  const NotesListScreen({super.key});
+
   @override
   _NotesListScreenState createState() => _NotesListScreenState();
 }
@@ -61,12 +63,12 @@ class _NotesListScreenState extends State<NotesListScreen> {
     }
   }
 
-//UI
+//Interface for the homes screen of notes app.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notes App'),
+        title: const Text('Notes App'),
       ),
       body: ListView.builder(
         itemCount: _notes.length,
@@ -81,7 +83,7 @@ class _NotesListScreenState extends State<NotesListScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _openAddNoteScreen,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

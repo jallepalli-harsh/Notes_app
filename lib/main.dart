@@ -6,9 +6,11 @@ void main() {
 }
 
 class NotesApp extends StatelessWidget {
+  const NotesApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Notes App',
       home: NotesListScreen(),
     );

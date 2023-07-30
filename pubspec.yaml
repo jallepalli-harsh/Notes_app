@@ -40,6 +40,7 @@ dependencies:
   moor: ^4.6.1+1
   moor_flutter: ^4.1.0
   flutter_quill: ^7.2.19
+  dotted_border: ^2.0.0+3
 
 dev_dependencies:
   flutter_test:

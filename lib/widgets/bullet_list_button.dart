@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
+
+//Class that is used to generate bullet points when the bullet list icon is pressed.
 class BulletListButton extends StatelessWidget {
   final TextEditingController controller;
 
-  const BulletListButton({required this.controller});
+  const BulletListButton({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: _toggleBulletList,
-      icon: Icon(Icons.format_list_bulleted),
+      icon: const Icon(Icons.format_list_bulleted),
     );
   }
 
